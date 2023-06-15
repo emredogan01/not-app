@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Öğrenci Not Hesaplama</h1>
+        <form id="student-form">
+            <div class="form-group">
+                <input id="name" type="text" placeholder="İsim" required>
+            </div>
+            <div class="form-group">
+                <input id="surname" type="text" placeholder="Soy İsim" required>
+            </div>
+            <div class="form-group">
+                <input id="number" type="text" placeholder="Örenci no" required>
+            </div>
+            <div class="form-group">
+                <input id="vize" type="number" placeholder="Vize" required>
+            </div>
+            <div class="form-group">
+                <input id="final" type="number" placeholder="Final" required>
+            </div>
+            <button type="submit" class="ekle">Ekle</button>
+        </form>
+        <div class="student-state">
+            <h3>Öğreci Listesi</h3>
+            <div class="">
+                <i></i>
+                <span>AA</span>
+                <i></i>
+                <span>BB</span>
+                <i></i>
+                <span>CC</span>
+                <i></i>
+                <span>FF</span>
+            </div>
+        </div>
+        <div id="student-list">
+            <!-- <p class="empty">Listenizde Öğreci Bulunmamaktadır.</p> -->
+            <!-- <div class="student-item">
+                <div class="student-item-info">
+                    <h3>İsim Soyisim - Öğrenci No</h3>
+                    <span>Vize: 100 Final: 100 </span>
+                    <p>Ortalama: Ortalama puan </p>
+                </div>
+                <div class="student-item-process">
+                    <i class="bi bi-pencil-square edit-btn"></i>
+                    <i class="bi bi-trash3-fill delete-btn"></i>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/datatypes.js"></script>
+</body>
+</html>

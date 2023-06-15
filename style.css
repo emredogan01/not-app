@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #8c7ae6 47%, #f5f6fa 47%);
+  height: 100vh;
+}
+
+.container {
+  background-color: #e1b12c;
+  color: #f5f6fa;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.container form {
+  margin-bottom: 25px;
+}
+.container form .form-group {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.container form .form-group input[type=text],
+.container form .form-group input[type=number] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 2px #f5f6fa;
+  background: transparent;
+  color: #f5f6fa;
+}
+.container form .form-group input[type=text]::-moz-placeholder, .container form .form-group input[type=number]::-moz-placeholder {
+  color: #2f3640;
+}
+.container form .form-group input[type=text]::placeholder,
+.container form .form-group input[type=number]::placeholder {
+  color: #2f3640;
+}
+.container form button {
+  display: block;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 5px;
+  border: solid 2px #f5f6fa;
+  background: transparent;
+  cursor: pointer;
+}
+.container form button:hover {
+  transform: scale(0.99);
+  transition: 0.2s ease-in-out;
+}
+.container #student-list {
+  border: solid 2px #f5f6fa;
+  border-radius: 5px;
+  padding: 10px;
+  height: 280px;
+  overflow-y: scroll;
+}
+.container #student-list .student-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+}
+.container #student-list .student-item-info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: start;
+}
+.container #student-list .student-item-process {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+  gap: 5px;
+}
+.container #student-list .student-item-process .delete-btn {
+  background-color: #dcdde1;
+  color: #40739e;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.container #student-list .student-item-process .delete-btn:hover {
+  transform: scale(0.99);
+  transition: ease-in-out 0.2s;
+}
+.container #student-list .student-item-process .edit-btn {
+  background-color: #dcdde1;
+  color: #c23616;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.container #student-list .student-item-process .edit-btn:hover {
+  transform: scale(0.99);
+  transition: ease-in-out 0.2s;
+}
+.container #student-list .empty {
+  text-align: center;
+  color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .student-state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  border-top: 2px solid #f5f6fa;
+}
+.container .student-state div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.container .student-state div i {
+  width: 25px;
+  height: 25px;
+  background-color: #2f3640;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.container .student-state div i:nth-child(1) {
+  background-color: #4cd137;
+}
+.container .student-state div i:nth-child(3) {
+  background-color: #0097e6;
+}
+.container .student-state div i:nth-child(5) {
+  background-color: #e84118;
+}
+.container .student-state div i:nth-child(7) {
+  background-color: #2f3640;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dcdde1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7f8fa6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #718093;
+}/*# sourceMappingURL=style.css.map */
